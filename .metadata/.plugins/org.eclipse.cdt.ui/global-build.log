@@ -1,0 +1,1800 @@
+10:32:46 **** Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+10:33:47 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:25:24: error: invalid use of template-name ‘Stack’ without an argument list
+ template < typename T> Stack::Stack() {
+                        ^
+make: *** [src/Stack.o] Error 1
+10:34:14 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:25:23: error: invalid use of template-name ‘Stack’ without an argument list
+ template <typename T> Stack::Stack() {
+                       ^
+make: *** [src/Stack.o] Error 1
+10:34:27 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:25:1: error: invalid use of template-name ‘Stack’ without an argument list
+ Stack::Stack() {
+ ^
+make: *** [src/Stack.o] Error 1
+10:38:12 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:25:1: error: expected unqualified-id before ‘<’ token
+ <template <typename T> Stack<::Stack() {
+ ^
+make: *** [src/Stack.o] Error 1
+10:38:14 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:25:1: error: expected unqualified-id before ‘<’ token
+ <template <typename T> Stack<::Stack() {
+ ^
+make: *** [src/Stack.o] Error 1
+10:38:32 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:25:1: error: expected unqualified-id before ‘<’ token
+ <template <typename T> Stack<T>::Stack() {
+ ^
+make: *** [src/Stack.o] Error 1
+10:38:38 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+10:40:56 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+10:41:03 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:25:23: error: prototype for ‘Stack<int>::Stack()’ does not match any in class ‘Stack<int>’
+ template <typename T> Stack<int>::Stack() {
+                       ^
+../src/Stack.cpp:14:29: error: candidates are: Stack<int>::Stack(const Stack<int>&)
+ template <typename T> class Stack {
+                             ^
+../src/Stack.cpp:16:2: error:                 Stack<T>::Stack() [with T = int]
+  Stack();
+  ^
+make: *** [src/Stack.o] Error 1
+10:41:08 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+10:41:22 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:25:24: error: prototype for ‘Stack<int>::Stack()’ does not match any in class ‘Stack<int>’
+ template <typename T1> Stack<int>::Stack() {
+                        ^
+../src/Stack.cpp:14:29: error: candidates are: Stack<int>::Stack(const Stack<int>&)
+ template <typename T> class Stack {
+                             ^
+../src/Stack.cpp:16:2: error:                 Stack<T>::Stack() [with T = int]
+  Stack();
+  ^
+make: *** [src/Stack.o] Error 1
+10:41:27 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:25:23: error: prototype for ‘Stack<int>::Stack()’ does not match any in class ‘Stack<int>’
+ template <typename T> Stack<int>::Stack() {
+                       ^
+../src/Stack.cpp:14:29: error: candidates are: Stack<int>::Stack(const Stack<int>&)
+ template <typename T> class Stack {
+                             ^
+../src/Stack.cpp:16:2: error:                 Stack<T>::Stack() [with T = int]
+  Stack();
+  ^
+make: *** [src/Stack.o] Error 1
+10:41:34 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+10:41:38 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:25:30: error: ‘T’ was not declared in this scope
+ template <typename T1> Stack<T>::Stack() {
+                              ^
+../src/Stack.cpp:25:31: error: template argument 1 is invalid
+ template <typename T1> Stack<T>::Stack() {
+                               ^
+../src/Stack.cpp:25:40: error: declaration of template ‘template<class T1> int Stack()’
+ template <typename T1> Stack<T>::Stack() {
+                                        ^
+../src/Stack.cpp:14:29: error: conflicts with previous declaration ‘template<class T> class Stack’
+ template <typename T> class Stack {
+                             ^
+../src/Stack.cpp: In function ‘int Stack()’:
+../src/Stack.cpp:27:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/Stack.o] Error 1
+10:41:42 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+10:41:46 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+10:48:07 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+10:48:46 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+10:48:54 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+10:49:31 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+10:50:38 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+10:50:40 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+10:50:59 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+10:51:28 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+10:52:04 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:19:2: error: ‘Node’ does not name a type
+  Node * start;
+  ^
+make: *** [src/Stack.o] Error 1
+10:52:28 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:19:2: error: ‘Node’ does not name a type
+  Node * starts;
+  ^
+make: *** [src/Stack.o] Error 1
+10:52:50 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+10:53:04 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+10:53:24 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+11:02:16 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+11:02:29 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+11:04:23 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:42:43: error: ISO C++ forbids declaration of ‘Push’ with no type [-fpermissive]
+ template <typename T> Stack<T>::Push( T &t) {
+                                           ^
+../src/Stack.cpp:42:23: error: prototype for ‘int Stack<T>::Push(T&)’ does not match any in class ‘Stack<T>’
+ template <typename T> Stack<T>::Push( T &t) {
+                       ^
+../src/Stack.cpp:22:7: error: candidate is: bool Stack<T>::Push(T&)
+  bool Push(T &t);
+       ^
+make: *** [src/Stack.o] Error 1
+11:04:34 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘bool Stack<T>::Push(T&)’:
+../src/Stack.cpp:44:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+11:08:27 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+11:15:39 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘bool Stack<T>::Push(T&)’:
+../src/Stack.cpp:46:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+11:17:25 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘bool Stack<T>::Push(T&)’:
+../src/Stack.cpp:47:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+11:17:30 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+12:44:27 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+12:44:35 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+12:45:05 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘bool Stack<T>::Push(T&)’:
+../src/Stack.cpp:41:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+12:45:14 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘bool Stack<T>::Push(T&)’:
+../src/Stack.cpp:41:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+12:45:18 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+12:45:43 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+12:45:48 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘bool Stack<T>::Push(T&)’:
+../src/Stack.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+12:46:31 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In constructor ‘Stack<T>::Stack()’:
+../src/Stack.cpp:30:2: error: ‘start’ was not declared in this scope
+  start = NULL;
+  ^
+../src/Stack.cpp: In destructor ‘Stack<T>::~Stack()’:
+../src/Stack.cpp:34:9: error: ‘start’ was not declared in this scope
+  delete(start);
+         ^
+../src/Stack.cpp: In member function ‘bool Stack<T>::Push(T&)’:
+../src/Stack.cpp:41:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/Stack.o] Error 1
+12:47:08 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In constructor ‘Stack<T>::Stack()’:
+../src/Stack.cpp:30:2: error: ‘start’ was not declared in this scope
+  start = NULL;
+  ^
+../src/Stack.cpp: In member function ‘bool Stack<T>::Push(T&)’:
+../src/Stack.cpp:41:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/Stack.o] Error 1
+12:47:20 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘bool Stack<T>::Push(T&)’:
+../src/Stack.cpp:41:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+12:47:27 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘bool Stack<T>::Push(T&)’:
+../src/Stack.cpp:42:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+12:47:31 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+12:47:53 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+12:48:34 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘bool Stack<T>::Push(T&)’:
+../src/Stack.cpp:42:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+12:48:45 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+12:49:13 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+12:49:46 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+12:57:09 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘bool Stack<T>::Push(T&)’:
+../src/Stack.cpp:42:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+12:59:30 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘bool Stack<T>::Push(T&)’:
+../src/Stack.cpp:43:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+../src/Stack.cpp:43:1: warning: no return statement in function returning non-void [-Wreturn-type]
+make: *** [src/Stack.o] Error 1
+12:59:35 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘bool Stack<T>::Push(T&)’:
+../src/Stack.cpp:43:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+../src/Stack.cpp:43:1: warning: no return statement in function returning non-void [-Wreturn-type]
+make: *** [src/Stack.o] Error 1
+13:20:26 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘bool Stack<T>::Push(T&)’:
+../src/Stack.cpp:43:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+../src/Stack.cpp:43:1: warning: no return statement in function returning non-void [-Wreturn-type]
+make: *** [src/Stack.o] Error 1
+13:20:35 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘bool Stack<T>::Push(T&)’:
+../src/Stack.cpp:41:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+14:19:58 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘bool Stack<T>::Push(T&)’:
+../src/Stack.cpp:44:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+14:22:43 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘bool Stack<T>::Push(T&)’:
+../src/Stack.cpp:42:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+14:29:05 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘bool Stack<T>::Push(T&)’:
+../src/Stack.cpp:44:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+14:32:45 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘bool Stack<T>::Push(T&)’:
+../src/Stack.cpp:43:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+14:32:59 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:38:28: error: prototype for ‘bool Stack<T>::Push(T&)’ does not match any in class ‘Stack<T>’
+ template <typename T> bool Stack<T>::Push( T &ref) {
+                            ^
+../src/Stack.cpp:22:7: error: candidate is: void Stack<T>::Push(T&)
+  void Push(T &t);
+       ^
+make: *** [src/Stack.o] Error 1
+14:33:07 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+14:35:10 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+14:38:36 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+15:10:34 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+15:10:47 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+15:12:02 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+15:12:13 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+15:15:09 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘T Stack<T>::Pop()’:
+../src/Stack.cpp:59:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+make: *** [src/Stack.o] Error 1
+15:16:46 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+15:17:25 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+15:21:06 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+15:22:19 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+15:23:31 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+15:25:21 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+15:25:29 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+15:28:12 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+15:29:13 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+15:36:34 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+15:50:20 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:76:9: error: expected unqualified-id before ‘<<’ token
+ template<<typename T> int Stack<T>::Size() {
+         ^
+../src/Stack.cpp:87:1: error: expected ‘;’ at end of input
+ }
+ ^
+make: *** [src/Stack.o] Error 1
+15:50:25 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘int Stack<T>::Size()’:
+../src/Stack.cpp:78:2: error: expected unqualified-id before ‘do’
+  do {
+  ^
+../src/Stack.cpp:81:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/Stack.o] Error 1
+15:50:59 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘int Stack<T>::Size()’:
+../src/Stack.cpp:81:1: error: expected ‘while’ before ‘}’ token
+ }
+ ^
+../src/Stack.cpp:81:1: error: expected ‘(’ before ‘}’ token
+../src/Stack.cpp:81:1: error: expected primary-expression before ‘}’ token
+../src/Stack.cpp:81:1: error: expected ‘)’ before ‘}’ token
+../src/Stack.cpp:81:1: error: expected ‘;’ before ‘}’ token
+../src/Stack.cpp:81:1: warning: no return statement in function returning non-void [-Wreturn-type]
+make: *** [src/Stack.o] Error 1
+15:51:25 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘int Stack<T>::Size()’:
+../src/Stack.cpp:81:1: error: expected ‘while’ before ‘}’ token
+ }
+ ^
+../src/Stack.cpp:81:1: error: expected ‘(’ before ‘}’ token
+../src/Stack.cpp:81:1: error: expected primary-expression before ‘}’ token
+../src/Stack.cpp:81:1: error: expected ‘)’ before ‘}’ token
+../src/Stack.cpp:81:1: error: expected ‘;’ before ‘}’ token
+../src/Stack.cpp:81:1: warning: no return statement in function returning non-void [-Wreturn-type]
+make: *** [src/Stack.o] Error 1
+15:51:38 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘int Stack<T>::Size()’:
+../src/Stack.cpp:81:1: error: expected ‘while’ before ‘}’ token
+ }
+ ^
+../src/Stack.cpp:81:1: error: expected ‘(’ before ‘}’ token
+../src/Stack.cpp:81:1: error: expected primary-expression before ‘}’ token
+../src/Stack.cpp:81:1: error: expected ‘)’ before ‘}’ token
+../src/Stack.cpp:81:1: error: expected ‘;’ before ‘}’ token
+../src/Stack.cpp:81:1: warning: no return statement in function returning non-void [-Wreturn-type]
+make: *** [src/Stack.o] Error 1
+15:52:43 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘int Stack<T>::Size()’:
+../src/Stack.cpp:81:1: error: expected ‘while’ before ‘}’ token
+ }
+ ^
+../src/Stack.cpp:81:1: error: expected ‘(’ before ‘}’ token
+../src/Stack.cpp:81:1: error: expected primary-expression before ‘}’ token
+../src/Stack.cpp:81:1: error: expected ‘)’ before ‘}’ token
+../src/Stack.cpp:81:1: error: expected ‘;’ before ‘}’ token
+../src/Stack.cpp:81:1: warning: no return statement in function returning non-void [-Wreturn-type]
+make: *** [src/Stack.o] Error 1
+15:53:08 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘int Stack<T>::Size()’:
+../src/Stack.cpp:81:1: error: expected ‘while’ before ‘}’ token
+ }
+ ^
+../src/Stack.cpp:81:1: error: expected ‘(’ before ‘}’ token
+../src/Stack.cpp:81:1: error: expected primary-expression before ‘}’ token
+../src/Stack.cpp:81:1: error: expected ‘)’ before ‘}’ token
+../src/Stack.cpp:81:1: error: expected ‘;’ before ‘}’ token
+../src/Stack.cpp:81:1: warning: no return statement in function returning non-void [-Wreturn-type]
+make: *** [src/Stack.o] Error 1
+16:00:59 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘int Stack<T>::Size()’:
+../src/Stack.cpp:79:9: error: ‘size’ was not declared in this scope
+  return size;
+         ^
+make: *** [src/Stack.o] Error 1
+16:02:14 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘int Stack<T>::Size()’:
+../src/Stack.cpp:84:15: error: expected primary-expression before ‘;’ token
+  return size_t;
+               ^
+make: *** [src/Stack.o] Error 1
+16:02:22 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+16:02:37 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+16:04:18 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+16:04:32 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘int Stack<T>::Size()’:
+../src/Stack.cpp:83:6: error: expected ‘;’ before ‘t_size’
+   ++ t_size;
+      ^
+make: *** [src/Stack.o] Error 1
+16:04:46 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In member function ‘int Stack<T>::Size()’:
+../src/Stack.cpp:83:6: error: expected ‘;’ before ‘t_size’
+   ++ t_size;
+      ^
+make: *** [src/Stack.o] Error 1
+16:04:49 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+16:05:16 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+16:05:27 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+16:07:31 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+16:20:31 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:88:28: error: redefinition of ‘class Stack<T>’
+ template<typename T> class Stack {
+                            ^
+../src/Stack.cpp:14:29: error: previous definition of ‘class Stack<T>’
+ template <typename T> class Stack {
+                             ^
+../src/Stack.cpp:105:7: error: ‘Storage’ is not a class template
+ class Storage<T*> // this is specialization of Storage that works with pointer types
+       ^
+make: *** [src/Stack.o] Error 1
+16:20:46 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:88:28: error: redefinition of ‘class Stack<T>’
+ template<typename T> class Stack {
+                            ^
+../src/Stack.cpp:14:28: error: previous definition of ‘class Stack<T>’
+ template<typename T> class Stack {
+                            ^
+../src/Stack.cpp:105:7: error: ‘Storage’ is not a class template
+ class Storage<T*> // this is specialization of Storage that works with pointer types
+       ^
+make: *** [src/Stack.o] Error 1
+16:20:56 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:88:19: error: expected nested-name-specifier before ‘T’
+ template<typename T*> class Stack {
+                   ^
+../src/Stack.cpp:88:20: error: expected ‘>’ before ‘*’ token
+ template<typename T*> class Stack {
+                    ^
+../src/Stack.cpp:14:10: error: template parameter ‘class T’
+ template<typename T> class Stack {
+          ^
+../src/Stack.cpp:88:29: error: redeclared here as ‘int T’
+ template<typename T*> class Stack {
+                             ^
+../src/Stack.cpp:105:7: error: ‘Storage’ is not a class template
+ class Storage<T*> // this is specialization of Storage that works with pointer types
+       ^
+make: *** [src/Stack.o] Error 1
+16:21:00 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:88:19: error: expected nested-name-specifier before ‘T’
+ template<typename T*> class Stack {
+                   ^
+../src/Stack.cpp:88:20: error: expected ‘>’ before ‘*’ token
+ template<typename T*> class Stack {
+                    ^
+../src/Stack.cpp:14:10: error: template parameter ‘class T’
+ template<typename T> class Stack {
+          ^
+../src/Stack.cpp:88:29: error: redeclared here as ‘int T’
+ template<typename T*> class Stack {
+                             ^
+../src/Stack.cpp:105:7: error: ‘Storage’ is not a class template
+ class Storage<T*> // this is specialization of Storage that works with pointer types
+       ^
+make: *** [src/Stack.o] Error 1
+16:21:04 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:88:19: error: expected nested-name-specifier before ‘T’
+ template<typename T*> class Stack {
+                   ^
+../src/Stack.cpp:88:20: error: expected ‘>’ before ‘*’ token
+ template<typename T*> class Stack {
+                    ^
+../src/Stack.cpp:14:10: error: template parameter ‘class T’
+ template<typename T> class Stack {
+          ^
+../src/Stack.cpp:88:29: error: redeclared here as ‘int T’
+ template<typename T*> class Stack {
+                             ^
+../src/Stack.cpp:105:7: error: ‘Storage’ is not a class template
+ class Storage<T*> // this is specialization of Storage that works with pointer types
+       ^
+make: *** [src/Stack.o] Error 1
+16:21:07 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:88:19: error: expected nested-name-specifier before ‘T’
+ template<typename T*> class Stack {
+                   ^
+../src/Stack.cpp:88:20: error: expected ‘>’ before ‘*’ token
+ template<typename T*> class Stack {
+                    ^
+../src/Stack.cpp:14:10: error: template parameter ‘class T’
+ template<typename T> class Stack {
+          ^
+../src/Stack.cpp:88:29: error: redeclared here as ‘int T’
+ template<typename T*> class Stack {
+                             ^
+../src/Stack.cpp:105:7: error: ‘Storage’ is not a class template
+ class Storage<T*> // this is specialization of Storage that works with pointer types
+       ^
+make: *** [src/Stack.o] Error 1
+16:21:28 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:88:17: error: expected identifier before ‘<’ token
+ template<> class< Stack {
+                 ^
+../src/Stack.cpp:88:17: error: expected unqualified-id before ‘<’ token
+../src/Stack.cpp:105:7: error: ‘Storage’ is not a class template
+ class Storage<T*> // this is specialization of Storage that works with pointer types
+       ^
+make: *** [src/Stack.o] Error 1
+16:21:38 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:88:17: error: expected identifier before ‘<’ token
+ template<> class<T*> Stack {
+                 ^
+../src/Stack.cpp:88:17: error: expected unqualified-id before ‘<’ token
+../src/Stack.cpp:105:7: error: ‘Storage’ is not a class template
+ class Storage<T*> // this is specialization of Storage that works with pointer types
+       ^
+make: *** [src/Stack.o] Error 1
+16:22:01 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:88:27: error: expected identifier before ‘<’ token
+ template<typename T> class<T*> Stack {
+                           ^
+../src/Stack.cpp:88:27: error: expected unqualified-id before ‘<’ token
+../src/Stack.cpp:105:7: error: ‘Storage’ is not a class template
+ class Storage<T*> // this is specialization of Storage that works with pointer types
+       ^
+make: *** [src/Stack.o] Error 1
+16:23:38 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:88:27: error: expected identifier before ‘<’ token
+ template<typename T> class<T*> Stack {
+                           ^
+../src/Stack.cpp:88:27: error: expected unqualified-id before ‘<’ token
+../src/Stack.cpp:105:7: error: ‘Storage’ is not a class template
+ class Storage<T*> // this is specialization of Storage that works with pointer types
+       ^
+make: *** [src/Stack.o] Error 1
+16:23:56 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:88:27: error: expected identifier before ‘<’ token
+ template<typename T> class<T*> Stack {
+                           ^
+../src/Stack.cpp:88:27: error: expected unqualified-id before ‘<’ token
+make: *** [src/Stack.o] Error 1
+16:25:16 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:88:27: error: expected identifier before ‘<’ token
+ template<typename T> class<T*> Stack {
+                           ^
+../src/Stack.cpp:88:27: error: expected unqualified-id before ‘<’ token
+make: *** [src/Stack.o] Error 1
+16:25:22 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:88:27: error: expected identifier before ‘<’ token
+ template<typename T> class<T*> Stack {
+                           ^
+../src/Stack.cpp:88:27: error: expected unqualified-id before ‘<’ token
+make: *** [src/Stack.o] Error 1
+16:26:04 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+16:26:07 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+16:27:09 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+16:27:54 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:103:45: error: expected unqualified-id before ‘)’ token
+ template<typename T> class Stack<T*>::Stack() {
+                                             ^
+make: *** [src/Stack.o] Error 1
+16:28:16 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+16:28:41 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:108:22: error: redefinition of ‘Stack<T*>::Stack()’
+ template<typename T> Stack<T*>::Stack() {
+                      ^
+../src/Stack.cpp:103:22: error: ‘Stack<T*>::Stack()’ previously declared here
+ template<typename T> Stack<T*>::Stack() {
+                      ^
+make: *** [src/Stack.o] Error 1
+16:28:48 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+16:32:16 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+16:32:27 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+16:33:45 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+16:33:49 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+16:33:52 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+16:34:47 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:129:24: error: redefinition of ‘T Stack<T>::Pop()’
+ template<typename T> T Stack<T>::Pop() {
+                        ^
+../src/Stack.cpp:55:24: error: ‘T Stack<T>::Pop()’ previously declared here
+ template<typename T> T Stack<T>::Pop() {
+                        ^
+../src/Stack.cpp:145:27: error: redefinition of ‘bool Stack<T>::Empty()’
+ template<typename T> bool Stack<T>::Empty() {
+                           ^
+../src/Stack.cpp:71:27: error: ‘bool Stack<T>::Empty()’ previously declared here
+ template<typename T> bool Stack<T>::Empty() {
+                           ^
+../src/Stack.cpp:149:26: error: redefinition of ‘int Stack<T>::Size()’
+ template<typename T> int Stack<T>::Size() {
+                          ^
+../src/Stack.cpp:75:26: error: ‘int Stack<T>::Size()’ previously declared here
+ template<typename T> int Stack<T>::Size() {
+                          ^
+make: *** [src/Stack.o] Error 1
+16:34:58 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:145:27: error: redefinition of ‘bool Stack<T>::Empty()’
+ template<typename T> bool Stack<T>::Empty() {
+                           ^
+../src/Stack.cpp:71:27: error: ‘bool Stack<T>::Empty()’ previously declared here
+ template<typename T> bool Stack<T>::Empty() {
+                           ^
+../src/Stack.cpp:149:26: error: redefinition of ‘int Stack<T>::Size()’
+ template<typename T> int Stack<T>::Size() {
+                          ^
+../src/Stack.cpp:75:26: error: ‘int Stack<T>::Size()’ previously declared here
+ template<typename T> int Stack<T>::Size() {
+                          ^
+make: *** [src/Stack.o] Error 1
+16:35:03 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:149:26: error: redefinition of ‘int Stack<T>::Size()’
+ template<typename T> int Stack<T>::Size() {
+                          ^
+../src/Stack.cpp:75:26: error: ‘int Stack<T>::Size()’ previously declared here
+ template<typename T> int Stack<T>::Size() {
+                          ^
+make: *** [src/Stack.o] Error 1
+16:35:07 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+16:35:10 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+16:35:15 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+16:35:47 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+16:36:08 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+16:38:39 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+16:48:19 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+16:49:24 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+16:53:26 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+16:56:28 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+16:56:34 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+16:58:34 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+16:59:07 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+17:00:04 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+17:01:30 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:27:4: error: ‘T Stack<T>::Top()’ cannot be overloaded
+  T Top();
+    ^
+../src/Stack.cpp:25:4: error: with ‘T Stack<T>::Top()’
+  T Top();
+    ^
+make: *** [src/Stack.o] Error 1
+17:01:36 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+17:01:44 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+17:06:52 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+17:07:36 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+17:08:43 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+17:10:30 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+17:10:32 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+17:10:47 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:151:25: error: prototype for ‘T& Stack<T*>::Top()’ does not match any in class ‘Stack<T*>’
+ template<typename T> T& Stack<T*>::Top() {
+                         ^
+../src/Stack.cpp:102:4: error: candidate is: T Stack<T*>::Top()
+  T Top();
+    ^
+make: *** [src/Stack.o] Error 1
+17:10:59 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+17:11:01 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+17:11:05 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+17:11:14 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+17:11:34 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In instantiation of ‘Stack<T>::Stack() [with T = int]’:
+../src/Stack.cpp:171:13:   required from here
+../src/Stack.cpp:30:7: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+  data = NULL;
+       ^
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+17:11:55 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+17:11:58 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+17:12:13 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In function ‘int main()’:
+../src/Stack.cpp:171:15: error: no matching function for call to ‘Stack<int>::Push(int)’
+  stack.Push(78);
+               ^
+../src/Stack.cpp:171:15: note: candidate is:
+../src/Stack.cpp:36:28: note: void Stack<T>::Push(T&) [with T = int]
+ template <typename T> void Stack<T>::Push( T &ref) {
+                            ^
+../src/Stack.cpp:36:28: note:   no known conversion for argument 1 from ‘int’ to ‘int&’
+make: *** [src/Stack.o] Error 1
+17:12:37 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp:36:28: error: prototype for ‘void Stack<T>::Push(const T&)’ does not match any in class ‘Stack<T>’
+ template <typename T> void Stack<T>::Push( const T &ref) {
+                            ^
+../src/Stack.cpp:22:7: error: candidate is: void Stack<T>::Push(T&)
+  void Push(T &t);
+       ^
+../src/Stack.cpp: In function ‘int main()’:
+../src/Stack.cpp:171:15: error: no matching function for call to ‘Stack<int>::Push(int)’
+  stack.Push(78);
+               ^
+../src/Stack.cpp:171:15: note: candidate is:
+../src/Stack.cpp:22:7: note: void Stack<T>::Push(T&) [with T = int]
+  void Push(T &t);
+       ^
+../src/Stack.cpp:22:7: note:   no known conversion for argument 1 from ‘int’ to ‘int&’
+make: *** [src/Stack.o] Error 1
+17:12:42 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+17:13:45 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+17:14:30 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+17:14:49 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In instantiation of ‘T& Stack<T>::Top() [with T = int]’:
+../src/Stack.cpp:173:20:   required from here
+../src/Stack.cpp:74:2: warning: value computed is not used [-Wunused-value]
+  *this->next;
+  ^
+../src/Stack.cpp:74:2: warning: statement has no effect [-Wunused-value]
+../src/Stack.cpp:75:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+17:16:04 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In instantiation of ‘T& Stack<T>::Top() [with T = int]’:
+../src/Stack.cpp:173:20:   required from here
+../src/Stack.cpp:74:2: error: invalid type argument of unary ‘*’ (have ‘int’)
+  *this->next->data;
+  ^
+../src/Stack.cpp:75:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/Stack.o] Error 1
+17:16:19 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In instantiation of ‘T& Stack<T>::Top() [with T = int]’:
+../src/Stack.cpp:173:20:   required from here
+../src/Stack.cpp:74:2: error: invalid type argument of unary ‘*’ (have ‘int’)
+  *this->next->data;
+  ^
+../src/Stack.cpp:75:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/Stack.o] Error 1
+17:16:58 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+../src/Stack.cpp: In instantiation of ‘T& Stack<T>::Top() [with T = int]’:
+../src/Stack.cpp:173:20:   required from here
+../src/Stack.cpp:74:2: warning: statement has no effect [-Wunused-value]
+  this->next->data;
+  ^
+../src/Stack.cpp:75:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+17:17:07 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+17:17:17 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+17:17:34 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 
+17:17:57 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+17:17:59 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+make: Nothing to be done for `all'.
+17:21:09 **** Incremental Build of configuration Debug for project Stack ****
+make all 
+Building file: ../src/Stack.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Stack.d" -MT"src/Stack.o" -o "src/Stack.o" "../src/Stack.cpp"
+Finished building: ../src/Stack.cpp
+ 
+Building target: Stack
+Invoking: Cross G++ Linker
+g++  -o "Stack"  ./src/Stack.o   
+Finished building target: Stack
+ 

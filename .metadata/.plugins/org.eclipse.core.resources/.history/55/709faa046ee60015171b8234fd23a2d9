@@ -1,0 +1,50 @@
+//============================================================================
+// Name        : Stack.cpp
+// Author      : nayimsust@gmail.com
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+template <typename T> class Stack {
+public:
+	Stack();
+	~Stack();
+
+	class Node;
+	Node *start;
+
+	bool Push(T &t);
+	T Pop();
+	bool IsEmpty();
+
+	class Node {
+	public:
+		T *data;
+		Node *next;
+	};
+
+};
+
+template <typename T> Stack<T>::Stack() {
+	start = NULL;
+}
+
+template <typename T> Stack<T>::~Stack() {
+	delete(start);
+}
+
+template <typename T> bool Stack<T>::Push( T &t) {
+
+}
+
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

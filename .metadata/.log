@@ -1,0 +1,10 @@
+!SESSION 2016-03-10 09:57:22.955 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.7.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -data /home/nayim/Documents/-coursera-algorithm -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-03-10 10:22:43.368
+!MESSAGE Indexed 'Stack' (1 sources, 100 headers) in 4.42 sec: 8,178 declarations; 14,196 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
