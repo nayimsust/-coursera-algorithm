@@ -22,7 +22,7 @@ public:
 	Stack *next;
 
 	void Push(const T &t);
-	T Pop();
+	void Pop();
 	bool Empty();
 	T &Top();
 	int Size();
@@ -32,7 +32,7 @@ public:
 	Iterator begin() {
 		return Iterator(this->next);
 	}
-	Iterator &end() {
+	Iterator end() {
 		return Iterator(NULL);
 	}
 
@@ -66,11 +66,11 @@ public:
 			return it;
 		}
 
-		bool operator!=(Iterator &iterator) {
+		bool operator!=(const Iterator &iterator) {
 			return (stack == iterator.stack) ? false : true;
 		}
 
-		bool operator==(Iterator &iterator) {
+		bool operator==(const Iterator &iterator) {
 			return (stack != iterator.stack) ? false : true;
 		}
 	};
@@ -117,7 +117,7 @@ template <typename T> void Stack<T>::Push( const T &ref) {
 	}
 }
 
-template<typename T> T Stack<T>::Pop() {
+template<typename T> void Stack<T>::Pop() {
 
 	if(!this->next) return;
 
@@ -158,9 +158,18 @@ int main() {
 
 	Stack<int> stack;
 	stack.Push(78);
+	stack.Push(12);
+	stack.Push(22);
 
 
-	cout << stack.Top() << endl;
+	Stack<int>::Iterator it;
+	it = stack.begin();
+
+
+	for(; it != stack.end(); ++it){
+		cout << *it << endl;
+	}
+
 
 	return 0;
 }
