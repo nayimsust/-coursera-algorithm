@@ -20,7 +20,7 @@ public:
 	Stack *next;
 
 	void Push(const T &t);
-	T Pop();
+	void Pop();
 	bool Empty();
 	T &Top();
 	int Size();
@@ -50,7 +50,7 @@ template <typename T> void Stack<T>::Push( const T &ref) {
 	}
 }
 
-template<typename T> T Stack<T>::Pop() {
+template<typename T> void Stack<T>::Pop() {
 
 	if(!this->next) return;
 
