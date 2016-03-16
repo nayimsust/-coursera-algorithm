@@ -175,8 +175,112 @@ template<typename T> int Stack<T*>::Size() {
 	return t_size;
 }
 
+
+enum Operator {
+	Plus,
+	Minus,
+	Multiply,
+	Divide,
+	Undefined
+};
+
+Operator ConvertCharToEnum (char c) {
+	if(c == '+')
+		return Plus;
+	else if(c == '-')
+		return Minus;
+	else if(c == '*')
+		return Multiply;
+	else if(c == '/')
+		return Divide;
+	else
+		return Undefined;
+};
+
+
+
+template<typename T> T EvaluateExpressionWithParenthesis(string &str, T& tResult) {
+
+	Stack<T> sValue;
+	Stack<char> sOperator;
+
+	T tAnswer(0);
+
+	for(int iIndex = 0; iIndex < str.size(); ++iIndex) {
+//		cout << "command::\"" << str[iIndex] << "\"" << endl;
+		Operator op = ConvertCharToEnum(str[iIndex]);
+
+		if(op != Undefined) {
+			sOperator.Push(str[iIndex]);
+//			cout << "Operator " << str[iIndex] << endl;
+		}
+		else if(str[iIndex] == '(') {
+//			cout << "Left Parenthesis" << endl;
+		}
+		else if(str[iIndex] == ')') {
+//			cout << "Right Parenthesis :: " << sValue.Size() << "::" << sOperator.Size() << endl;
+			op = ConvertCharToEnum(sOperator.Top());
+			sOperator.Pop();
+
+			T b = sValue.Top();
+			sValue.Pop();
+			T a = sValue.Top();
+			sValue.Pop();
+
+			T c;
+			switch(op) {
+				case Plus:
+					c = a + b;
+					sValue.Push(c);
+//					cout << a << "::" << b << ":" << c <<endl;
+					break;
+				case Minus:
+					c = a - b;
+					sValue.Push(c);
+//					cout << a << "::" << b << ":" << c <<endl;
+					break;
+				case Multiply:
+					c = a * b;
+					sValue.Push(c);
+//					cout << a << "::" << b << ":" << c <<endl;
+					break;
+				case Divide:
+					c = a / b;
+					sValue.Push(c);
+//					cout << a << "::" << b << ":" << c <<endl;
+					break;
+				default:
+					break;
+			}
+		}
+		else if(str[iIndex] >= '0' && str[iIndex] <= '9') {
+//			cout << "Operand " << (str[iIndex] - '0') << endl;
+			sValue.Push(str[iIndex] - '0');
+		}
+		else {
+//		cout << "Else " << endl;
+		}
+	}
+
+	if(sValue.Size() == 1 ) {
+		tAnswer = sValue.Top();
+//		cout << "Result found and is " << tAnswer << endl;
+		tResult = tAnswer;
+		return tAnswer;
+	}
+	else {
+		tResult = tAnswer;
+//		cout << "Result not found and is " << tAnswer << endl;
+		return tAnswer;
+	}
+}
+
 int main() {
 
+	string sQuestion = "(1+((3-2)*(5/1)))";
+//	string sQuestion = "(1+2)";
+	int iResult = 0;
+	cout << EvaluateExpressionWithParenthesis(sQuestion, iResult) << endl;
 
 	return 0;
 }
