@@ -107,9 +107,9 @@ public:
 	Stack *next;
 
 	void Push(T *t);
-	T Pop();
+	void Pop();
 	bool Empty();
-	T &Top();
+	T *Top();
 	int Size();
 };
 
@@ -137,7 +137,7 @@ template<typename T> void Stack<T*>::Push(T * const ptr) {
 	}
 }
 
-template<typename T> T Stack<T*>::Pop() {
+template<typename T> void Stack<T*>::Pop() {
 
 	if (!this->next)
 		return;
@@ -157,8 +157,8 @@ template<typename T> bool Stack<T*>::Empty() {
 	return (this->next) ? true : false;
 }
 
-template<typename T> T& Stack<T*>::Top() {
-	return *this->next->data;
+template<typename T> T* Stack<T*>::Top() {
+	return this->next->data;
 }
 
 template<typename T> int Stack<T*>::Size() {
@@ -175,8 +175,79 @@ template<typename T> int Stack<T*>::Size() {
 	return t_size;
 }
 
+
+class Me{
+public:
+	int value;
+	Me():value(0){
+	}
+
+	Me(int i): value(i) {
+
+	}
+
+	~Me(){
+	}
+
+	int GetMe() {
+		return value;
+	}
+
+	int compareTo(Me &rMe) {
+
+		if(this == &rMe)
+			return 0;
+		if(this->value < rMe.value) return -1;
+		if(this->value > rMe.value) return 1;
+		return 0;
+	}
+};
+
+bool Less(Me &m1, Me &m2) {
+	return m1.compareTo(m2) < 0;
+}
+
+void Exchange(Me array[], int i, int j) {
+	Me m3 = array[i];
+	array[i] = array[j];
+	array[j] = m3;
+}
+
+void SelectionSort(Me array[], int iLength) {
+
+	int iMin;
+	for(int i = 0; i < iLength; ++i) {
+		iMin = i;
+		for(int j = i + 1; j < iLength; ++j) {
+			if(Less(array[j], array[iMin])) {
+				iMin = j;
+			}
+		}
+		Exchange(array, i, iMin);
+	}
+}
+
 int main() {
 
+	int iLength = 10;
+	Me me[iLength];
+
+	for(int i = 0; i < iLength; ++i) {
+		me[i] = Me(iLength - i);
+	}
+
+	for(int i = 0; i < iLength; ++i) {
+		cout << me[i].GetMe() << endl;
+	}
+
+
+	SelectionSort(me, 10);
+
+	cout << "After Selection sort" << endl;
+
+	for(int i = 0; i < iLength; ++i) {
+		cout << me[i].GetMe() << endl;
+	}
 
 	return 0;
 }
