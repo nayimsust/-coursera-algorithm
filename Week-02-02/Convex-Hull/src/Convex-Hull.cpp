@@ -203,28 +203,84 @@ template<typename T> int Stack<T*>::Size() {
 	return t_size;
 }
 
-
-
-class Point2D{
+template<typename T> class Point2D{
 
 	public:
-		double m_x, m_y;
+		T m_x, m_y;
+		T polar_Angle;
 
 	public:
-		Point2D(): m_x(0), m_y(0){
+		T GetX() {
+			return m_x;
 		}
 
-		Point2D(double x, double y): m_x(x), m_y(y) {
+		T GetY() {
+			return m_y;
+		}
+
+		void SetPolarAngle(T angle) {
+			polar_Angle = angle;
+		}
+
+		T GetPolarAngle() {
+			return polar_Angle;
+		}
+
+	public:
+		Point2D(): m_x(0), m_y(0), polar_Angle(0){
+		}
+
+		Point2D(T x, T y): m_x(x), m_y(y) {
 		}
 
 		double Euclidian_Distance(Point2D &point) {
-			double dy = (point.m_y - m_y);
-			double dx = (point.m_x - m_x);
+			T dy = (point.m_y - m_y);
+			T dx = (point.m_x - m_x);
 			return sqrt(dy*dy + dx*dx);
+		}
+
+		int compareTo(Point2D &point) {
+
+			if(this == &point)
+				return 0;
+
+			if(this->m_x > point->m_x) return 1;
+			if(this->m_x < point->m_x) return -1;
+			if(this->m_y > point->m_y) return 1;
+			if(this->m_y < point->m_y) return -1;
+			return 0;
 		}
 };
 
-int CCW(Point2D a, Point2D b, Point2D c) {
+template<typename T> void Exchange(Point2D<T> &p1, Point2D<T> &p2) {
+
+	if(&p1 == &p2)
+		return;
+
+	Point2D<T> temp;
+
+	temp  = p1;
+	p1 = p2;
+	p2 = p1;
+}
+
+template<typename T> int Less(Point2D<T> p1, Point2D<T> p2) {
+	return p1.compareTo(p2) < 0;
+}
+
+template<typename T> void InsertionSort(Point2D<T> array[], int iLength) {
+
+	for(int i = 0; i < iLength; ++i) {
+		for(int j = i; j >= 1; --j) {
+			if(Less(array[j], array[j-1]))
+				Exchange(array[j], array[j-1]);
+			else
+				break;
+		}
+	}
+}
+
+template<typename T> int CCW(Point2D<T> a, Point2D<T> b, Point2D<T> c) {
 
 	double determinant = (a.m_x*(b.m_y-c.m_y)) - (a.m_y*(b.m_x-c.m_x)) + (b.m_x*c.m_y - b.m_y*c.m_x);
 	if(determinant < 0) return -1;
@@ -232,7 +288,15 @@ int CCW(Point2D a, Point2D b, Point2D c) {
 	else return 0;
 }
 
+template <typename T> T TRand(T fMin, T fMax) {
+    T f = (T)rand() / RAND_MAX;
+    return fMin + f * (fMax - fMin);
+}
+
 int main() {
+
+
+
 
 	return 0;
 }
