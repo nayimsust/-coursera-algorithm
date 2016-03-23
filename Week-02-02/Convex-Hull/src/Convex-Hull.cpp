@@ -239,7 +239,7 @@ template<typename T> class Point2D{
 			return sqrt(dy*dy + dx*dx);
 		}
 
-		int compareTo(Point2D &point) {
+		int compareToX(Point2D &point) {
 
 			if(this == &point)
 				return 0;
@@ -250,25 +250,57 @@ template<typename T> class Point2D{
 			if(this->m_y < point->m_y) return -1;
 			return 0;
 		}
+
+		int compareToY(Point2D &point) {
+
+			if(this == &point)
+				return 0;
+
+			if(this->m_y > point->m_y) return 1;
+			if(this->m_y < point->m_y) return -1;
+			if(this->m_x > point->m_x) return 1;
+			if(this->m_x < point->m_x) return -1;
+			return 0;
+		}
 };
 
-template<typename T> void Exchange(Point2D<T> &p1, Point2D<T> &p2) {
+template<typename T1, typename T2> void Exchange(T1<T2> &p1, T1<T2> &p2) {
 
 	if(&p1 == &p2)
 		return;
 
-	Point2D<T> temp;
+	T1<T2> temp;
 
 	temp  = p1;
 	p1 = p2;
 	p2 = p1;
 }
 
-template<typename T> int Less(Point2D<T> p1, Point2D<T> p2) {
-	return p1.compareTo(p2) < 0;
+template<typename T> int compareToX(Point2D<T> &p1, Point2D<T> &p2) {
+
+	if(&p1 == &p2)
+		return 0;
+
+	if(p1.m_x > p2.m_x) return 1;
+	if(this->m_x < point->m_x) return -1;
+	if(this->m_y > point->m_y) return 1;
+	if(this->m_y < point->m_y) return -1;
+	return 0;
 }
 
-template<typename T> void InsertionSort(Point2D<T> array[], int iLength) {
+int compareToY(Point2D &point) {
+
+	if(this == &point)
+		return 0;
+
+	if(this->m_y > point->m_y) return 1;
+	if(this->m_y < point->m_y) return -1;
+	if(this->m_x > point->m_x) return 1;
+	if(this->m_x < point->m_x) return -1;
+	return 0;
+}
+
+template<typename T1, typename T2> void InsertionSort(T1<T2> array[], int iLength) {
 
 	for(int i = 0; i < iLength; ++i) {
 		for(int j = i; j >= 1; --j) {
@@ -294,6 +326,28 @@ template <typename T> T TRand(T fMin, T fMax) {
 }
 
 int main() {
+
+	int iSize = 10;
+	double RANGE_MIN = 1;
+	double RANGE_MAX = 100;
+
+	Point2D<double> Points[10];
+
+	/*	randomly generate the sample points	*/
+	for(int i = 0; i < iSize; ++i) {
+
+		double x = TRand(RANGE_MIN, RANGE_MAX);
+		double y = TRand(RANGE_MIN, RANGE_MAX);
+		Point2D<double> point(x, y);
+
+		Points[i] = point;
+//		cout << Points[i].GetX() << " " << Points[i].GetY() << endl;
+	}
+
+
+
+	/*	find the pivot point according to minimum y axis so lets sort	*/
+
 
 
 
