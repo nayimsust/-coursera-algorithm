@@ -264,12 +264,12 @@ template<typename T> class Point2D{
 		}
 };
 
-template<typename T1, typename T2> void Exchange(T1<T2> &p1, T1<T2> &p2) {
+template<typename T> void Exchange(Point2D<T> &p1, Point2D<T> &p2) {
 
 	if(&p1 == &p2)
 		return;
 
-	T1<T2> temp;
+	Point2D<T> temp;
 
 	temp  = p1;
 	p1 = p2;
@@ -282,25 +282,25 @@ template<typename T> int compareToX(Point2D<T> &p1, Point2D<T> &p2) {
 		return 0;
 
 	if(p1.m_x > p2.m_x) return 1;
-	if(this->m_x < point->m_x) return -1;
-	if(this->m_y > point->m_y) return 1;
-	if(this->m_y < point->m_y) return -1;
+	if(p1.m_x < p2.m_x) return -1;
+	if(p1.m_y > p2.m_y) return 1;
+	if(p1.m_y < p2.m_y) return -1;
 	return 0;
 }
 
-int compareToY(Point2D &point) {
+template<typename T> int compareToY(Point2D<T> &p1, Point2D<T> &p2) {
 
-	if(this == &point)
+	if(&p1 == &p2)
 		return 0;
 
-	if(this->m_y > point->m_y) return 1;
-	if(this->m_y < point->m_y) return -1;
-	if(this->m_x > point->m_x) return 1;
-	if(this->m_x < point->m_x) return -1;
+	if(p1.m_y > p2.m_y) return 1;
+	if(p1.m_y < p2.m_y) return -1;
+	if(p1.m_x > p2.m_x) return 1;
+	if(p1.m_x < p2.m_x) return -1;
 	return 0;
 }
 
-template<typename T1, typename T2> void InsertionSort(T1<T2> array[], int iLength) {
+template<class T1, typename T2> void InsertionSort(T1<T2> array[], int iLength) {
 
 	for(int i = 0; i < iLength; ++i) {
 		for(int j = i; j >= 1; --j) {
@@ -310,6 +310,23 @@ template<typename T1, typename T2> void InsertionSort(T1<T2> array[], int iLengt
 				break;
 		}
 	}
+}
+
+template<typename T> T CalculatePolarAngle(Point2D<T> p1, Point2D<T> p2) {
+
+	double deltaX = (double)(p2.m_x - p1.m_x);
+	double deltaY = (double)(p2.m_y - p1.m_y);
+	double angle;
+
+	if (deltaX == 0 && deltaY == 0)
+		return 0;
+
+	angle = atan2(deltaY,deltaX) * 57.295779513082;
+
+   if (angle < 0)
+	angle += 360.;
+
+	return angle;
 }
 
 template<typename T> int CCW(Point2D<T> a, Point2D<T> b, Point2D<T> c) {
@@ -343,7 +360,6 @@ int main() {
 		Points[i] = point;
 //		cout << Points[i].GetX() << " " << Points[i].GetY() << endl;
 	}
-
 
 
 	/*	find the pivot point according to minimum y axis so lets sort	*/
