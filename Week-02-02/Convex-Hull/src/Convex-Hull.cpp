@@ -9,6 +9,7 @@
 #include <iostream>
 #include <algorithm>
 #include <math.h>
+#include <vector>
 
 using namespace std;
 
@@ -106,7 +107,7 @@ template<typename T> void Stack<T>::Pop() {
 }
 
 template<typename T> bool Stack<T>::Empty() {
-	return (this->next) ? true : false;
+	return (this->next) ? false : true;
 }
 
 template<typename T> T& Stack<T>::Top() {
@@ -183,7 +184,7 @@ template<typename T> T Stack<T*>::Pop() {
 }
 
 template<typename T> bool Stack<T*>::Empty() {
-	return (this->next) ? true : false;
+	return (this->next) ? false : true;
 }
 
 template<typename T> T& Stack<T*>::Top() {
@@ -273,10 +274,10 @@ template<typename T> void Exchange(Point2D<T> &p1, Point2D<T> &p2) {
 
 	temp  = p1;
 	p1 = p2;
-	p2 = p1;
+	p2 = temp;
 }
 
-template<typename T> int compareToX(Point2D<T> &p1, Point2D<T> &p2) {
+int compareToX(Point2D<double> &p1, Point2D<double> &p2) {
 
 	if(&p1 == &p2)
 		return 0;
@@ -288,7 +289,7 @@ template<typename T> int compareToX(Point2D<T> &p1, Point2D<T> &p2) {
 	return 0;
 }
 
-template<typename T> int compareToY(Point2D<T> &p1, Point2D<T> &p2) {
+int compareToY(Point2D<double> &p1, Point2D<double> &p2) {
 
 	if(&p1 == &p2)
 		return 0;
@@ -300,11 +301,21 @@ template<typename T> int compareToY(Point2D<T> &p1, Point2D<T> &p2) {
 	return 0;
 }
 
-template<class T1, typename T2> void InsertionSort(T1<T2> array[], int iLength) {
+int compareToPolarAngle(Point2D<double> &p1, Point2D<double> &p2) {
+
+	if(&p1 == &p2)
+		return 0;
+
+	if(p1.polar_Angle > p2.polar_Angle) return 1;
+	if(p1.polar_Angle < p2.polar_Angle) return -1;
+	return 0;
+}
+
+template<class T, class Compare> void InsertionSort(T array[], int iLength, Compare comp) {
 
 	for(int i = 0; i < iLength; ++i) {
 		for(int j = i; j >= 1; --j) {
-			if(Less(array[j], array[j-1]))
+			if(comp(array[j], array[j-1]) < 0)
 				Exchange(array[j], array[j-1]);
 			else
 				break;
@@ -332,8 +343,8 @@ template<typename T> T CalculatePolarAngle(Point2D<T> p1, Point2D<T> p2) {
 template<typename T> int CCW(Point2D<T> a, Point2D<T> b, Point2D<T> c) {
 
 	double determinant = (a.m_x*(b.m_y-c.m_y)) - (a.m_y*(b.m_x-c.m_x)) + (b.m_x*c.m_y - b.m_y*c.m_x);
-	if(determinant < 0) return -1;
-	else if(determinant > 0) return 1;
+	if(determinant > 0) return 1;
+	else if(determinant < 0) return -1;
 	else return 0;
 }
 
@@ -344,13 +355,14 @@ template <typename T> T TRand(T fMin, T fMax) {
 
 int main() {
 
-	int iSize = 10;
+	int iSize = 20;
 	double RANGE_MIN = 1;
 	double RANGE_MAX = 100;
 
-	Point2D<double> Points[10];
+	Point2D<double> Points[iSize];
 
 	/*	randomly generate the sample points	*/
+	cout << endl << "Sample points for Convex Hull" << endl;
 	for(int i = 0; i < iSize; ++i) {
 
 		double x = TRand(RANGE_MIN, RANGE_MAX);
@@ -358,15 +370,59 @@ int main() {
 		Point2D<double> point(x, y);
 
 		Points[i] = point;
-//		cout << Points[i].GetX() << " " << Points[i].GetY() << endl;
+		cout << Points[i].GetX() << " " << Points[i].GetY() << endl;
+	}
+
+	/*	find the pivot point according to minimum y axis so lets sort	*/
+	InsertionSort(Points, iSize, compareToY);
+	cout << endl << "Sorted According to Y-axis value" << endl;
+	for(int i = 0; i < iSize; ++i) {
+		cout << Points[i].GetX() << " " << Points[i].GetY() << endl;
+	}
+	cout << endl << "Pivot is " << Points[0].GetX() << " " << Points[0].GetY() << endl;
+
+	/*
+	 * Calculate the polar angle with the pivot of all points.
+	 */
+	for(int i = 0; i < iSize; ++i) {
+		Points[i].SetPolarAngle(CalculatePolarAngle(Points[0], Points[i]));
+	}
+	InsertionSort(Points, iSize, compareToPolarAngle);
+	cout << endl << "Sorted According to Polar angle value" << endl;
+	for(int i = 0; i < iSize; ++i) {
+		cout << Points[i].GetX() << " " << Points[i].GetY() << " " << Points[i].GetPolarAngle() << endl;
+	}
+
+	/*
+	 *	Now convex hull algorithm implemention
+	 */
+	Stack<Point2D<double> > hull;
+	hull.Push(Points[0]);
+	hull.Push(Points[1]);
+
+	Point2D<double> p2;
+	Point2D<double> p1;
+
+	for(int i = 2; i < iSize; ++i) {
+		p2 = Points[i];
+		p1 = hull.Top();
+		hull.Pop();
+
+		while(hull.Size() >= 1 && CCW(hull.Top(), p1, p2) < 1) {
+			p1 = hull.Top();
+			hull.Pop();
+		}
+
+		hull.Push(p1);
+		hull.Push(p2);
 	}
 
 
-	/*	find the pivot point according to minimum y axis so lets sort	*/
-
-
-
-
+	cout << endl << "Result of convex hull is " << hull.Size() << " Points the smallest perimeter to cover all Points" << endl;
+	while(!hull.Empty()) {
+		cout << hull.Top().GetX() << " " << hull.Top().GetY() << " " << hull.Top().GetPolarAngle() << endl;
+		hull.Pop();
+	}
 
 	return 0;
 }
