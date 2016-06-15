@@ -22,6 +22,7 @@ public:
 	Value Get(Key key);
 
 	int Size();
+	int Size(Key key);
 	Key Floor(Key key);
 	Key Ceil(Key key);
 	int Rank(Key key);
@@ -57,7 +58,7 @@ private:
 		else
 			Parent->m_leftNode = Insert(key, value, Parent->m_leftNode);
 
-		Parent->m_iCount = Parent->m_rightNode->m_iCount + Parent->m_leftNode->m_iCount + 1;
+		Parent->m_iCount = Size(Parent->m_rightNode) + Size(Parent->m_leftNode) + 1;
 
 		return Parent;
 	}
@@ -108,7 +109,7 @@ private:
 		}
 		else
 			Parent->m_leftNode = DeleteMin(Parent->m_leftNode);
-
+		Parent->m_iCount = Size(Parent->m_leftNode) + Size(Parent->m_rightNode) + 1;
 		return Parent;
 	}
 
@@ -134,11 +135,21 @@ private:
 		else
 			Parent->m_leftNode = Delete(key, Parent->m_leftNode);
 
-		Parent->m_iCount = Parent->m_leftNode->m_iCount + Parent->m_rightNode->m_iCount + 1;
+		Parent->m_iCount = Size(Parent->m_leftNode) + Size(Parent->m_rightNode) + 1;
 		return Parent;
 	}
 
-	int Size(Node *Parent);
+	int Size(Key key, Node *Parent) {
+		if(Parent == NULL)
+			return 0;
+		if(Parent->m_Key == key)
+			return Parent->m_iCount;
+		else if(Parent->m_Key > key)
+			return Size(key, Parent->m_leftNode);
+		else
+			return Size(key, Parent->m_rightNode);
+	}
+
 	Key Floor(Key &key, Node *Parent);
 	Key Ceil(Key &key, Node *Parent);
 	int Rank(Key &key, Node *Parent);
@@ -186,6 +197,16 @@ template <typename Key, typename Value> Key BinarySearchTree<Key, Value>::Max() 
 
 template <typename Key, typename Value> void BinarySearchTree<Key, Value>::Delete(Key key) {
 	m_Root = Delete(key, m_Root);
+}
+
+template <typename Key, typename Value> int BinarySearchTree<Key, Value>::Size() {
+	if(m_Root == NULL)
+		return 0;
+	return m_Root->m_iCount;
+}
+
+template <typename Key, typename Value> int BinarySearchTree<Key, Value>::Size(Key key) {
+	return Size(key, m_Root);
 }
 
 void swap(int &a, int &b) {
